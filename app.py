@@ -18,7 +18,7 @@ app = Flask(__name__)
 
 CORS(app, resources={r"/*": {"origins": "*"}})
 # --- AssemblyAI Settings ---
-ASSEMBLYAI_KEY = "a1135f75968642b9b4572f4a53d8fa9c"  # Replace with your env-secured key
+ASSEMBLYAI_KEY = "Replace with your env-secured key"  # Replace with your env-secured key
 HEADERS = {"authorization": ASSEMBLYAI_KEY}
 TRANSCRIBE_HEADERS = {**HEADERS, "content-type": "application/json"}
 
@@ -114,7 +114,7 @@ def generate_graph():
             return jsonify({"error": "Transcript not provided"}), 400
 
     doc = Document(page_content=transcript)
-    llm = OpenRouterLLM(api_key='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')
+    llm = OpenRouterLLM(api_key='Replace with Your own openrouterllm key')
     transformer = LLMGraphTransformer(llm=llm)
     graph_docs = transformer.convert_to_graph_documents([doc])
 
@@ -195,7 +195,7 @@ def query():
     """
 
 
-    client = OpenAI(base_url="https://openrouter.ai/api/v1", api_key='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')
+    client = OpenAI(base_url="https://openrouter.ai/api/v1", api_key='Replace with Your own openrouterllm key')
     response = client.chat.completions.create(model="deepseek/deepseek-chat-v3-0324:free", messages=[
         {"role": "system", "content": "You are a helpful assistant."},
         {"role": "user", "content": prompt}
