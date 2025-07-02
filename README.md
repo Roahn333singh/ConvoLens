@@ -58,6 +58,10 @@ __**🛠 Tech Stack**__
 - ☁️ **Google Cloud Build + Cloud Run**
 
 ---
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/9708f577-6154-4798-9a39-dc16f4b7aa64" />
+
+<img width="1613" alt="image" src="https://github.com/user-attachments/assets/76c74310-8dba-47d2-a59f-594acbf94182" />
+
 
 __**📦 Deployment**__
 
@@ -71,8 +75,9 @@ gcloud run deploy flask-backend \
   --platform managed \
   --region <your-region> \
   --allow-unauthenticated
-<img width="1710" alt="image" src="https://github.com/user-attachments/assets/9708f577-6154-4798-9a39-dc16f4b7aa64" />
 
-<img width="1613" alt="image" src="https://github.com/user-attachments/assets/76c74310-8dba-47d2-a59f-594acbf94182" />
+
+
+
 
 
